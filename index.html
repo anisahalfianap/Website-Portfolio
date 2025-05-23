@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anisah Alfiana Putri</title>
+    <title>Anisah Alfiana Putri - Web Developer & Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio Anisah Alfiana Putri, Web Developer dan Data Analyst berbasis di Surabaya. Spesialisasi: Vue.js, PHP, Python, Data Visualization, dan UI Design.">
+    <meta name="keywords" content="web developer surabaya, data analyst, vue.js, php developer, python data visualization, portfolio ITATS">
     <meta name="google-site-verification" content="Jbr4UJR7P2eqGWwiJdUdpR5sEaJtNx00JpQeETogrLI" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -158,7 +160,7 @@
             text-shadow: 0 0 5px #ffffff, 0 0 10px #f701ff, 0 0 15px #db34db, 0 0 20px #db34db;
         }
 
-        /* PORTOFOLIO STYLES - UPDATED */
+        /* PORTOFOLIO */
         .portofolio-item {
             margin-bottom: 0px;
             overflow: hidden;
@@ -515,17 +517,13 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">MyPortfolio</a>
+                <a class="navbar-brand" href="#">Anisah Alfiana</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home" @click="setActive('home')"
-                                :class="{active: activeSection === 'home'}">Home</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about" @click="setActive('about')"
                                 :class="{active: activeSection === 'about'}">About</a>
@@ -536,7 +534,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portofolio" @click="setActive('portofolio')"
-                                :class="{active: activeSection === 'portofolio'}">Portofolio</a>
+                                :class="{active: activeSection === 'portofolio'}">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience" @click="setActive('experience')"
@@ -558,8 +556,7 @@
                     <div class="col-lg-6 reveal fade-left" :class="{active: activeSection === 'home'}">
                         <h4 class="text-custom-purple">Hello, I'm</h4>
                         <h1 class="display-4 fw-bold mb-4">Anisah Alfiana</h1>
-                        <h3 class="mb-4">Creating Impact Through Technology</h3>
-                        <p class="lead mb-4">Graphic Design • Web Development • Data Science</p>
+                        <h5 class="mb-4">Ready to Help You Create Impact Through Information Technology.</h5>
                         <div class="d-flex flex-wrap">
                             <a href="#contact" class="btn btn-primary me-2 mb-2">Contact Me</a>
                             <a href="#portofolio" class="btn btn-outline-light mb-2">View Work</a>
@@ -567,7 +564,7 @@
                     </div>
                     <div class="col-lg-6 text-center mt-5 mt-lg-0 reveal fade-right"
                         :class="{active: activeSection === 'home'}">
-                        <img src="assets/img/profil.png" alt="Profile" class="img-fluid" style="max-height: 400px;">
+                        <img src="assets/img/profil.png" alt="Anisah Alfiana Putri - Web Developer Surabaya" class="img-fluid" style="max-height: 400px;">
                     </div>
                 </div>
             </div>
@@ -578,22 +575,13 @@
             <div class="container">
                 <div class="section-header text-center reveal fade-bottom" :class="{active: activeSection === 'about'}">
                     <h2>About Me</h2>
+                    <p class="section-subtitle">Web Developer & Data Analyst from Surabaya</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 about-content reveal fade-left" :class="{active: activeSection === 'about'}">
                         <h3 class="mb-4">Who Am I?</h3>
-                        <p>My name is Anisah Alfiana Putri, a final-year student of the Information Systems program at
-                            the Institut Teknologi Adhi Tama Surabaya (ITATS), currently residing in Surabaya.</p>
-
-                        <p>I have a strong interest in web development and data analysis, with a focus on:</p>
-                        <ul>
-                            <li>Frontend Development (Vue.js, Bootstrap)</li>
-                            <li>Backend Programming (PHP, Python)</li>
-                            <li>Data Analysis & Visualization</li>
-                            <li>UI Design</li>
-                        </ul>
-                        <p>Beyond coding, I enjoy photography and graphic design, which help me develop a strong
-                            aesthetic sense in creating user interfaces.</p>
+                        <p>My name is <strong>Anisah Alfiana Putri</strong>, a final-year student majoring in Information Systems at
+                            the <strong>Institut Teknologi Adhi Tama Surabaya (ITATS)</strong> currently residing in Surabaya. I have a strong enthusiasm for the world of information technology. I am experienced and have skills in building Websites, Data analysis, and also Design.</p>
                     </div>
                     <div class="col-lg-6 reveal fade-right" :class="{active: activeSection === 'about'}">
                         <div class="row">
@@ -659,7 +647,7 @@
             <div class="container">
                 <div class="section-header text-center reveal fade-bottom"
                     :class="{active: activeSection === 'portofolio'}">
-                    <h2>My Portofolio</h2>
+                    <h2>My Portfolio</h2>
                     <p class="section-subtitle">A collection of projects I've worked on.</p>
                 </div>
                 <div class="text-center mb-5 portofolio-filter-buttons reveal fade-bottom"
@@ -679,10 +667,10 @@
                         v-for="(item, index) in filteredPortofolio" :key="index">
                         <div class="portofolio-item">
                             <div class="portofolio-image-container">
-                                <img :src="item.image" :alt="item.title" class="portofolio-img">
+                                <img :src="item.image" :alt="item.altText" class="portofolio-img">
                                 <div class="portofolio-overlay">
                                     <h4>{{ item.title }}</h4>
-                                    <p>{{ item.category }}</p>
+                                    <p>{{ item.description }}</p>
                                     <a :href="item.link" class="btn btn-light btn-sm mt-2">View Project</a>
                                 </div>
                             </div>
@@ -732,6 +720,7 @@
                 <div class="section-header text-center reveal fade-bottom"
                     :class="{active: activeSection === 'contact'}">
                     <h2>Get In Touch</h2>
+                    <p class="section-subtitle">Available for freelance projects and full-time opportunities</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-5 mb-5 mb-lg-0 reveal fade-left" :class="{active: activeSection === 'contact'}">
@@ -751,13 +740,10 @@
                                     <p class="mb-0">anisahalfiana@gmail.com</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-start mb-4">
-                                <i class="fas fa-phone-alt contact-icon"></i>
-                                <div>
-                                    <h5>Phone</h5>
-                                    <p class="mb-0">+1 234 567 890</p>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h5>Freelance Availability</h5>
+                            <p>I accept web development and data analysis projects. Contact me for further discussion.</p>
                         </div>
                     </div>
                     <div class="col-lg-7 reveal fade-right" :class="{active: activeSection === 'contact'}">
@@ -774,7 +760,7 @@
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <input type="text" class="form-control" placeholder="Subject" v-model="form.subject"
+                                <input type="whatsapp" class="form-control" placeholder="Your Whatsapp" v-model="form.whatsapp"
                                     required>
                             </div>
                             <div class="mb-4">
@@ -791,13 +777,11 @@
         <!-- Footer -->
         <footer class="text-center">
             <div class="container">
-                <p class="mb-3">&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+                <p class="mb-3">&copy; 2025 Anisah Alfiana Putri. All Rights Reserved.</p>
                 <div class="social-links">
                     <a href="https://discordapp.com/users/1057144415854014585" class="social-icon"><i class="fa-brands fa-discord"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/anisah_.alfi" class="social-icon"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/anisahalfianap" class="social-icon"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -819,13 +803,17 @@
                     form: {
                         name: '',
                         email: '',
-                        subject: '',
+                        whatsapp: '',
                         message: ''
                     },
                     personalInfo: [
                         { label: 'Name', value: 'Anisah Alfiana Putri', icon: 'fa-user' },
+                        { label: 'Education', value: 'Institut Teknologi Adhi Tama Surabaya', icon: 'fa-graduation-cap' },
                         { label: 'Email', value: 'anisahalfiana@gmail.com', icon: 'fa-envelope' },
-                        { label: 'Freelance', value: 'Available', icon: 'fa-check-circle' }
+                        { label: 'Location', value: 'Surabaya, Indonesia', icon: 'fa-map-marker-alt' },
+                        { label: 'Freelance or Full-time', value: 'Available', icon: 'fa-check-circle' }
+                        
+
                     ],
                     professionalSkills: [
                         {
@@ -841,7 +829,7 @@
                             ]
                         },
                         {
-                            name: 'Frontend Developer',
+                            name: 'Frontend Development',
                             description: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.',
                             icon: 'fa-solid fa-laptop-code',
                             details: [
@@ -855,7 +843,7 @@
                             ]
                         },
                         {
-                            name: 'Backend Developer',
+                            name: 'Backend Development',
                             description: 'I am experienced in building efficient, secure, and scalable server, API, and database systems. I focus on strong business logic and seamless integration with the frontend.',
                             icon: 'fa-solid fa-gears',
                             details: [
@@ -872,7 +860,7 @@
                             ]
                         },
                         {
-                            name: 'Data Science',
+                            name: 'Data Analyst',
                             description: 'I have a keen interest in extracting valuable insights from data using analytical approaches and machine learning algorithms. With a combination of technical skills and business understanding, I aim to create data-driven solutions that have a real impact.',
                             icon: 'fa-solid fa-atom',
                             details: [
@@ -886,30 +874,57 @@
                         }
                     ],
                     portofolioItems: [
-                        { title: 'E-commerce Website', category: 'web', image: 'assets/img/la-ferme web.png', link: 'https://la-ferme-mart.glitch.me' },
-                        { title: 'Exploratory Data Analysis', category: 'app', image: 'assets/img/persentase kelulusan.png', link: 'https://github.com/anisahalfianap/Graduation-analysis-visualization-data.git' },
-                        { title: 'My Calculator', category: 'web', image: 'assets/img/phone.gif', link: 'https://calculator-ku.netlify.app/' },
-                        { title: 'Web Design Prototype', category: 'graphic', image: 'assets/img/paw club edit.jpg', link: 'https://www.figma.com/design/soVqNcZeMhZvDMkhLS2HoD/Untitled?node-id=1-3&m=dev' },
-                        { title: 'Portfolio Website', category: 'web', image: 'assets/img/project6.jpg', link: '#' }
+                        { 
+                            title: 'E-commerce Website', 
+                            category: 'web', 
+                            image: 'assets/img/la-ferme web.png', 
+                            altText: 'Website E-commerce La Ferme Mart - Dibuat dengan Vue.js dan PHP',
+                            description: 'Online store website with features such as shopping cart, payments, and product management',
+                            link: 'https://la-ferme-mart.glitch.me' 
+                        },
+                        { 
+                            title: 'Exploratory Data Analysis', 
+                            category: 'app', 
+                            image: 'assets/img/persentase kelulusan.png', 
+                            altText: 'Analisis Data Kelulusan Siswa - Visualisasi dengan Python dan Tableau',
+                            description: 'Student graduation percentage analysis project with data visualization',
+                            link: 'https://github.com/anisahalfianap/Graduation-analysis-visualization-data.git' 
+                        },
+                        { 
+                            title: 'My Calculator', 
+                            category: 'web', 
+                            image: 'assets/img/javascript-calculator-demo.gif', 
+                            altText: 'Aplikasi Kalkulator JavaScript - Proyek Web Development',
+                            description: 'Interactive calculator with responsive interface',
+                            link: 'https://calculator-ku.netlify.app/' 
+                        },
+                        { 
+                            title: 'Web Design Prototype', 
+                            category: 'graphic', 
+                            image: 'assets/img/paw club edit.jpg', 
+                            altText: 'Prototype UI/UX Website Paw Club - Desain Figma',
+                            description: 'Design concept for animal lover community website',
+                            link: 'https://www.figma.com/design/soVqNcZeMhZvDMkhLS2HoD/Untitled?node-id=1-3&m=dev' 
+                        }
                     ],
                     experience: [
                         {
-                            period: '2020 - Present',
-                            position: 'Lorem ipsum dolor sit amet',
-                            company: 'Tech Solutions Inc.',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            period: '2023 - Present',
+                            position: 'Freelance Web Developer',
+                            company: 'Self-Employed',
+                            description: 'Membangun website custom untuk klien lokal di Surabaya menggunakan teknologi modern seperti Vue.js dan PHP. Fokus pada solusi e-commerce dan company profile.'
                         },
                         {
-                            period: '2018 - 2020',
-                            position: 'Lorem ipsum dolor sit amet',
-                            company: 'Web Creatives LLC',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            period: '2022 - 2023',
+                            position: 'Data Analysis Intern',
+                            company: 'PT. Solusi Data Indonesia',
+                            description: 'Membantu tim analisis data dalam membersihkan dataset, membuat visualisasi, dan mengembangkan dashboard untuk presentasi klien.'
                         },
                         {
-                            period: '2016 - 2018',
-                            position: 'Lorem ipsum dolor sit amet',
-                            company: 'Digital Agency',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            period: '2021 - 2022',
+                            position: 'Graphic Designer Part-time',
+                            company: 'Digital Creative Agency',
+                            description: 'Membuat desain poster, logo, dan konten media sosial untuk berbagai kampanye pemasaran digital.'
                         }
                     ],
                     education: [
@@ -949,7 +964,7 @@
                     this.form = {
                         name: '',
                         email: '',
-                        subject: '',
+                        whatsapp: '',
                         message: ''
                     };
                 },
@@ -1032,6 +1047,32 @@
                 window.removeEventListener('scroll', this.handleScroll);
             }
         }).mount('#app');
+    </script>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "name": "Portfolio Anisah Alfiana Putri",
+      "jobTitle": "Web Developer & Data Analyst",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Surabaya",
+        "addressRegion": "Jawa Timur",
+        "addressCountry": "Indonesia"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Institut Teknologi Adhi Tama Surabaya"
+      },
+      "url": "https://anisahalfianaputri.netlify.app/",
+      "sameAs": [
+        "https://github.com/anisahalfianap",
+        "https://www.instagram.com/anisah_.alfi",
+        "https://discordapp.com/users/1057144415854014585"
+      ]
+    }
     </script>
 </body>
 
