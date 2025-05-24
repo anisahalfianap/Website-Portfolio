@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anisah Alfiana Putri - Web Developer & Data Analyst Portfolio</title>
-    <meta name="description" content="Portfolio Anisah Alfiana Putri, Web Developer dan Data Analyst berbasis di Surabaya. Spesialisasi: Vue.js, PHP, Python, Data Visualization, dan UI Design.">
-    <meta name="keywords" content="web developer surabaya, data analyst, vue.js, php developer, python data visualization, portfolio ITATS">
+    <meta name="description"
+        content="Portfolio Anisah Alfiana Putri, Web Developer dan Data Analyst berbasis di Surabaya. Spesialisasi: Vue.js, PHP, Python, Data Visualization, dan UI Design.">
+    <meta name="keywords"
+        content="web developer surabaya, data analyst, vue.js, php developer, python data visualization, portfolio ITATS">
     <meta name="google-site-verification" content="Jbr4UJR7P2eqGWwiJdUdpR5sEaJtNx00JpQeETogrLI" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,23 +51,25 @@
         }
 
         /* Cursor effects on hover */
-        .btn:hover ~ .cursor,
-        a:hover ~ .cursor,
-        button:hover ~ .cursor {
+        .btn:hover~.cursor,
+        a:hover~.cursor,
+        button:hover~.cursor {
             transform: translate(-50%, -50%) scale(1.5);
             background-color: rgba(219, 52, 219, 0.9);
         }
 
-        .btn:hover ~ .cursor-follower,
-        a:hover ~ .cursor-follower,
-        button:hover ~ .cursor-follower {
+        .btn:hover~.cursor-follower,
+        a:hover~.cursor-follower,
+        button:hover~.cursor-follower {
             transform: translate(-50%, -50%) scale(0.5);
             border-color: rgba(219, 52, 219, 0.8);
         }
 
         /* Hide cursor on touch devices */
         @media (hover: none) {
-            .cursor, .cursor-follower {
+
+            .cursor,
+            .cursor-follower {
                 display: none;
             }
         }
@@ -240,6 +244,7 @@
             background-color: #9e3b9e;
             box-shadow: 0 0 10px rgba(219, 52, 219, 0.5);
         }
+
         /* END PORTOFOLIO STYLES */
 
         .contact-info {
@@ -512,7 +517,7 @@
     <!-- Custom Cursor Elements -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-    
+
     <div id="app">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -564,7 +569,8 @@
                     </div>
                     <div class="col-lg-6 text-center mt-5 mt-lg-0 reveal fade-right"
                         :class="{active: activeSection === 'home'}">
-                        <img src="assets/img/profil.png" alt="Anisah Alfiana Putri - Web Developer Surabaya" class="img-fluid" style="max-height: 400px;">
+                        <img src="assets/img/profil.png" alt="Anisah Alfiana Putri - Web Developer Surabaya"
+                            class="img-fluid" style="max-height: 400px;">
                     </div>
                 </div>
             </div>
@@ -580,8 +586,11 @@
                 <div class="row">
                     <div class="col-lg-6 about-content reveal fade-left" :class="{active: activeSection === 'about'}">
                         <h3 class="mb-4">Who Am I?</h3>
-                        <p>My name is <strong>Anisah Alfiana Putri</strong>, a final-year student majoring in Information Systems at
-                            the <strong>Institut Teknologi Adhi Tama Surabaya (ITATS)</strong> currently residing in Surabaya. I have a strong enthusiasm for the world of information technology. I am experienced and have skills in building Websites, Data analysis, and also Design.</p>
+                        <p>My name is <strong>Anisah Alfiana Putri</strong>, a final-year student majoring in
+                            Information Systems at
+                            the <strong>Institut Teknologi Adhi Tama Surabaya (ITATS)</strong> currently residing in
+                            Surabaya. I have a strong enthusiasm for the world of information technology. I am
+                            experienced and have skills in building Websites, Data analysis, and also Design.</p>
                     </div>
                     <div class="col-lg-6 reveal fade-right" :class="{active: activeSection === 'about'}">
                         <div class="row">
@@ -596,7 +605,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary mt-3">Download CV</a>
+
                     </div>
                 </div>
             </div>
@@ -743,7 +752,8 @@
                         </div>
                         <div class="mt-4">
                             <h5>Freelance Availability</h5>
-                            <p>I accept web development and data analysis projects. Contact me for further discussion.</p>
+                            <p>I accept web development and data analysis projects. Contact me for further discussion.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-7 reveal fade-right" :class="{active: activeSection === 'contact'}">
@@ -760,8 +770,8 @@
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <input type="whatsapp" class="form-control" placeholder="Your Whatsapp" v-model="form.whatsapp"
-                                    required>
+                                <input type="whatsapp" class="form-control" placeholder="Your Whatsapp"
+                                    v-model="form.whatsapp" required>
                             </div>
                             <div class="mb-4">
                                 <textarea class="form-control" rows="5" placeholder="Your Message"
@@ -779,7 +789,8 @@
             <div class="container">
                 <p class="mb-3">&copy; 2025 Anisah Alfiana Putri. All Rights Reserved.</p>
                 <div class="social-links">
-                    <a href="https://discordapp.com/users/1057144415854014585" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://discordapp.com/users/1057144415854014585" class="social-icon"><i
+                            class="fa-brands fa-discord"></i></a>
                     <a href="https://www.instagram.com/anisah_.alfi" class="social-icon"><i
                             class="fab fa-instagram"></i></a>
                     <a href="https://github.com/anisahalfianap" class="social-icon"><i class="fab fa-github"></i></a>
@@ -812,7 +823,7 @@
                         { label: 'Email', value: 'anisahalfiana@gmail.com', icon: 'fa-envelope' },
                         { label: 'Location', value: 'Surabaya, Indonesia', icon: 'fa-map-marker-alt' },
                         { label: 'Freelance or Full-time', value: 'Available', icon: 'fa-check-circle' }
-                        
+
 
                     ],
                     professionalSkills: [
@@ -874,57 +885,57 @@
                         }
                     ],
                     portofolioItems: [
-                        { 
-                            title: 'E-commerce Website', 
-                            category: 'web', 
-                            image: 'assets/img/la-ferme web.png', 
+                        {
+                            title: 'E-commerce Website',
+                            category: 'web',
+                            image: 'assets/img/la-ferme web.png',
                             altText: 'Website E-commerce La Ferme Mart - Dibuat dengan Vue.js dan PHP',
                             description: 'Online store website with features such as shopping cart, payments, and product management',
-                            link: 'https://la-ferme-mart.glitch.me' 
+                            link: 'https://la-ferme-mart.glitch.me'
                         },
-                        { 
-                            title: 'Exploratory Data Analysis', 
-                            category: 'app', 
-                            image: 'assets/img/persentase kelulusan.png', 
+                        {
+                            title: 'Exploratory Data Analysis',
+                            category: 'app',
+                            image: 'assets/img/persentase kelulusan.png',
                             altText: 'Analisis Data Kelulusan Siswa - Visualisasi dengan Python dan Tableau',
                             description: 'Student graduation percentage analysis project with data visualization',
-                            link: 'https://github.com/anisahalfianap/Graduation-analysis-visualization-data.git' 
+                            link: 'https://github.com/anisahalfianap/Graduation-analysis-visualization-data.git'
                         },
-                        { 
-                            title: 'My Calculator', 
-                            category: 'web', 
-                            image: 'assets/img/javascript-calculator-demo.gif', 
+                        {
+                            title: 'My Calculator',
+                            category: 'web',
+                            image: 'assets/img/javascript-calculator-demo.gif',
                             altText: 'Aplikasi Kalkulator JavaScript - Proyek Web Development',
                             description: 'Interactive calculator with responsive interface',
-                            link: 'https://calculator-ku.netlify.app/' 
+                            link: 'https://calculator-ku.netlify.app/'
                         },
-                        { 
-                            title: 'Web Design Prototype', 
-                            category: 'graphic', 
-                            image: 'assets/img/paw club edit.jpg', 
+                        {
+                            title: 'Web Design Prototype',
+                            category: 'graphic',
+                            image: 'assets/img/paw club edit.jpg',
                             altText: 'Prototype UI/UX Website Paw Club - Desain Figma',
                             description: 'Design concept for animal lover community website',
-                            link: 'https://www.figma.com/design/soVqNcZeMhZvDMkhLS2HoD/Untitled?node-id=1-3&m=dev' 
+                            link: 'https://www.figma.com/design/soVqNcZeMhZvDMkhLS2HoD/Untitled?node-id=1-3&m=dev'
                         }
                     ],
                     experience: [
                         {
-                            period: '2023 - Present',
-                            position: 'Freelance Web Developer',
-                            company: 'Self-Employed',
-                            description: 'Membangun website custom untuk klien lokal di Surabaya menggunakan teknologi modern seperti Vue.js dan PHP. Fokus pada solusi e-commerce dan company profile.'
+                            period: 'Jun 2019 – Sep 2024',
+                            position: 'Admin Online & Cutomer Support',
+                            company: 'Dj7 Sports',
+                            description: 'Handled customer inquiries and technical issues via WhatsApp and online marketplaces. Managed daily sales data and created detailed reports using Google Sheets and Microsoft Excel. Updated product information, inventory, and visual store content. Provided tecnical support for WiFi connectivity issues, printer jams, and internal tools'
                         },
                         {
-                            period: '2022 - 2023',
-                            position: 'Data Analysis Intern',
-                            company: 'PT. Solusi Data Indonesia',
-                            description: 'Membantu tim analisis data dalam membersihkan dataset, membuat visualisasi, dan mengembangkan dashboard untuk presentasi klien.'
+                            period: 'Feb 2024 – Jun 2024 ',
+                            position: 'Full-Stack Web Development',
+                            company: 'PT Global Investment Institusi (MSIB Batch 6)',
+                            description: 'Developed end-to-end web applications from UI/UX design to backend implementation using Python (Flask) and deployment. Handled RESTful API integration and managed MongoDB databases for product, user, and transaction data. Performed technical audits using Google Lighthouse, achieving scores of 80% in SEO and 96% in Best Practices. Led a small development team in building features and optimizing website performance.'
                         },
                         {
-                            period: '2021 - 2022',
-                            position: 'Graphic Designer Part-time',
-                            company: 'Digital Creative Agency',
-                            description: 'Membuat desain poster, logo, dan konten media sosial untuk berbagai kampanye pemasaran digital.'
+                            period: 'May 2024',
+                            position: 'Volunteer Staff Module & Speakers',
+                            company: 'KKN SMK Wachid Hasyim 1 Surabaya',
+                            description: 'Created and delivered interactive learning modules on UI/UX fundamentals to vocational high school students. Collaborated with team members to organize content and evaluate the effectiveness of learning sessions. Developed educational visuals using Canva and Figma to enhance student engagement.'
                         }
                     ],
                     education: [
@@ -1013,25 +1024,25 @@
                 // Custom cursor functionality
                 const cursor = document.querySelector('.cursor');
                 const cursorFollower = document.querySelector('.cursor-follower');
-                
+
                 // Only initialize cursor if not on a touch device
                 if (window.matchMedia("(pointer: fine)").matches) {
                     document.addEventListener('mousemove', (e) => {
                         cursor.style.left = e.clientX + 'px';
                         cursor.style.top = e.clientY + 'px';
-                        
+
                         // Follower cursor with slight delay
                         setTimeout(() => {
                             cursorFollower.style.left = e.clientX + 'px';
                             cursorFollower.style.top = e.clientY + 'px';
                         }, 100);
                     });
-                    
+
                     // Click effect
                     document.addEventListener('click', () => {
                         cursor.style.transform = 'translate(-50%, -50%) scale(0.7)';
                         cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.3)';
-                        
+
                         setTimeout(() => {
                             cursor.style.transform = 'translate(-50%, -50%) scale(1)';
                             cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
